@@ -1,15 +1,27 @@
-Source: template-repository
-Section: unknown
+Source: python-seedir
+Section: python
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Andrey Rakhmatullin <wrar@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-python3,
+               python3-all,
+               python3-natsort <!nocheck>,
+               python3-setuptools,
+Standards-Version: 4.6.2
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-seedir
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-seedir.git
+Testsuite: autopkgtest-pkg-pybuild
+Homepage: https://github.com/earnestt1234/seedir
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: python3-seedir
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends},
+Suggests: python3-emoji
+Description: Package for creating, editing, and reading folder tree diagrams
+ The general logic of seedir is based on representing directories in 3 different
+ forms: real directories on a computer, text diagrams of directories, and "fake
+ directories" (manipulable Python folder objects). seedir provides tools for
+ going in between these formats.

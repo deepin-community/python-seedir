@@ -1,5 +1,12 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-seedir (0.4.2+dfsg-1) unstable; urgency=medium
 
-  * Initial release
+  * Upload to unstable.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Andrey Rakhmatullin <wrar@debian.org>  Thu, 06 Jul 2023 20:58:49 +0400
+
+python-seedir (0.4.2+dfsg-1~exp1) experimental; urgency=medium
+
+  * Upload to experimental.
+  * Initial release (Closes: #1037017).
+
+ -- Andrey Rakhmatullin <wrar@debian.org>  Mon, 03 Jul 2023 21:18:17 +0400
